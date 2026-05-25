@@ -1,12 +1,18 @@
 .navbar {
-  background-color: #000000;
+  background-color: #ffdc9c;
+  justify-content: space-between;
   padding: 25px 20px;
   display: flex;
   gap: 20px;
+  margin-bottom: 30px
 }
 
+
 .navbar a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 1000;
+  background: rgba(255, 253, 208, 0.8);
+  border-radius: 10px;    
+  text-decoration: none;
 }
 

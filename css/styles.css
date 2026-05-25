@@ -1,0 +1,6 @@
+body {
+    background-image: url('/images/background.jpg');
+    background-size: cover;  /* Dopasowuje obrazek do całego ekranu */
+    background-repeat: no-repeat; /* Zapobiega powielaniu obrazka */
+}
+
