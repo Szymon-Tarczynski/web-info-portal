@@ -1,6 +1,37 @@
 body {
-    background-image: url('/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;  /* Dopasowuje obrazek do całego ekranu */
     background-repeat: no-repeat; /* Zapobiega powielaniu obrazka */
 }
 
+.main {
+  flex: 1;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+}
+
+/* obraz */
+#slide {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* PRZYCISKI – styl jak navbar */
+.btn {
+  background-color: #ffdc9c;
+  color: black;
+  font-weight: 1000;
+  background: rgba(255, 253, 208, 0.8);
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}

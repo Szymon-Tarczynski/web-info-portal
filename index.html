@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/description.css">
     <link rel="stylesheet" href="css/description-list.css">
+    <link rel="stylesheet" href="css/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web.info.portal</title>
@@ -21,14 +22,18 @@
 
 <body>
 
+
     <div class="navbar">
         <a>SERWIS WWW</a>
-        <div class="www-link">
-            <a href="https://pl.wikipedia.org/wiki/World_Wide_Web">Więcej informacji o WWW</a>
-            <h> | </h>
-            <a href="/pages/images.html">Galeria zdjęć - WWW</a>
+        <div class="dropdown">
+            <button class="dropbtn">Więcej ▼</button>
+            <div class="dropdown-content">
+                <a href="https://pl.wikipedia.org/wiki/World_Wide_Web">Informacje o WWW</a>
+                <a href="pages/images.html">Galeria zdjęć</a>
+            </div>
         </div>
     </div>
+
 
     <div class="description">
         <h3> Serwis WWW to strona internetowa udostępniana w sieci, którą użytkownik może otworzyć w przeglądarce.
@@ -74,5 +79,10 @@
         </ol>
     </div>
 </body>
+
+
+<div class="footer">
+    <a>@ 2026 web.info.portal - Szymon </a>
+</div>
 
 </html>

@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web.info.portal - zdjęcia</title>
@@ -21,14 +22,54 @@
 
     <div class="navbar">
         <a>SERWIS WWW</a>
-        <a href="/index.html" alt="Reditect "> ⭠ Wróć do strony głównej</a>
-    </div>
+        <a href="../index.html" alt="Reditect "> ⭠ Wróć do strony głównej</a>
     </div>
 
 
-    <div class="image-contener">
-        <img src="/images/internet.jpg" alt="Serwis WWW" width="700" height="500">
+    <div class="slider">
+
+        <button class="btn" onclick="prev()">⭠</button>
+
+        <img id="slide">
+
+        <button class="btn" onclick="next()">⭢</button>
+
     </div>
-</body>
+
+    <script>
+        let images = [];
+        let index = 0;
+
+        fetch("../images.php")
+            .then(res => res.json())
+            .then(data => {
+                images = data;
+                show();
+            });
+
+
+        function show() {
+            if (images.length > 0) {
+                document.getElementById("slide").src = images[index];
+            }
+        }
+
+        function next() {
+            index++;
+            if (index >= images.length) index = 0;
+            show();
+        }
+
+        function prev() {
+            index--;
+            if (index < 0) index = images.length - 1;
+            show();
+        }
+    </script>
+
+
+    <div class="footer">
+        <a>@ 2026 web.info.portal - Szymon </a>
+    </div>
 
 </html>

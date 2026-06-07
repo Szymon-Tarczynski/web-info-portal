@@ -1,10 +1,10 @@
 .description h3 {
     font-weight: normal;
+    font-style: italic;
     text-align: center;
     margin-left: auto;
     padding-top: 2mm;
     margin-top: 40px;
     background: rgba(255, 253, 208, 0.8);
     border-radius: 20px;    
-
 }
