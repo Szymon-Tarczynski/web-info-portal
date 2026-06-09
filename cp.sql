@@ -2,7 +2,7 @@
 CREATE DATABASE IF NOT EXISTS web_info_portal;
 USE web_info_portal;
 
--- tabela (tylko to czego potrzebujesz)
+-- tabela 
 CREATE TABLE IF NOT EXISTS images (
     id INT AUTO_INCREMENT PRIMARY KEY,
     path VARCHAR(255) NOT NULL
